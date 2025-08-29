@@ -1,15 +1,16 @@
 {
   "name": "portafolio-app",
+  "homepage": "https://FrankAmorinNavarro.github.io/proyectos-fronted/",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://FrankAmorinNavarro.github.io/proyectos-front",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && cpx dist/index.html dist/404.html",
     "lint": "eslint .",
-    "preview": "vite preview"
-    
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@loadable/component": "^5.16.7",
@@ -33,11 +34,24 @@
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react": "^4.4.1",
+    "cpx": "^1.5.0",
     "eslint": "^9.25.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "gh-pages": "^6.3.0",
     "globals": "^16.0.0",
     "vite": "^6.3.5"
+  },
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "eslint.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrankAmorinNavarro/proyectos-fronted.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FrankAmorinNavarro/proyectos-fronted/issues"
   }
 }

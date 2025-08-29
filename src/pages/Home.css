@@ -257,7 +257,7 @@
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding: 0.8rem; /* Espacio interno */
   margin-bottom: 30px; /* Separación del siguiente elemento */
-  background-color: rgba(0, 0, 0, 0.80);
+  background-color: rgb(207, 207, 207);
   overflow: hidden; /* Oculta exceso de gradiente */
   position: relative; /* Necesario para el pseudo-elemento */
   border-radius: 1rem; /* Bordes redondeados */
@@ -265,6 +265,7 @@
   margin: 0 auto;
   display: block;
   font-weight: 800;
+  color: black;
   
 }
 
@@ -276,8 +277,9 @@
 }
 
 .btn-proyectos:hover {
-  background-color: rgb(207, 207, 207);
+  background-color: rgba(150, 150, 150, 0.8);
   color: black;
+  box-shadow: #333;
   /*transform: translateY(-1px);*/
   
 }

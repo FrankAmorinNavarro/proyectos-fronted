@@ -46,7 +46,7 @@ export default function Projects() {
       title: 'Shoes Cleaning',
       image: primerportada,
       description: 'Una página web responsive con Login de usario (necesario crear cuenta para ver la página), una empresa que ofrece el servicio de limpieza de calzados.',
-      link: '/proyecto1'
+      link: 'https://frankamorinnavarro.github.io/shoes-cleaning/'
     },
     {
       id: 2,

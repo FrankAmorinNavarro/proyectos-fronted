@@ -64,7 +64,7 @@ const renderStars = (level) => (
           <p>
             Con conocimientos en el diseño e implementación de interfaces de usuario modernas, responsivas y accesibles.
             Manejo de tecnologías como HTML5, CSS3, JavaScript y frameworks como ReactJs y Angular/Vue. Interesado en mejorar
-            la experiencia del usuario (UX/UI), optimizar el rendimiento en navegadores y asegurar la compatibilidad entre dispositivos.
+            la experiencia del usuario (UX/UI), asegurar la compatibilidad entre dispositivos.
             Comprometido con el aprendizaje continuo y con la capacidad para colaborar eficazmente en equipos de trabajo ágiles,
             integrándome con áreas de diseño y desarrollo backend.
           </p>
