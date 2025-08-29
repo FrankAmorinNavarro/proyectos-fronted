@@ -3,7 +3,6 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate, Outlet } from "react-router-dom";
 import loadable from '@loadable/component';
 
-// Importa tu Contexto
 import { AuthProvider, useAuth } from '../project1/AuthContext'; 
 import NewPassword from '../project1/NewPassword';
 
@@ -21,11 +20,6 @@ const HomeTwo = loadable(() => import('../project2/HomeTwo'));
 export const FrontApp = () => {
   
 
-  // === ¡LA SOLUCIÓN! DEFINIMOS LOS GUARDIANES AQUÍ DENTRO ===
-  // =========================================================
-  // Al estar definidos dentro de `FrontApp`, cuando los usemos en las rutas,
-  // ya estarán dentro del alcance del <AuthProvider> y podrán usar el hook `useAuth`.
-
   const ProtectedRoute = () => {
     const { isLoggedIn } = useAuth();
     return isLoggedIn ? <Outlet /> : <Navigate to="/proyecto1" replace />;
@@ -35,7 +29,6 @@ export const FrontApp = () => {
     const { isLoggedIn } = useAuth();
     return isLoggedIn ? <Navigate to="/menuprincipal1" replace /> : <Outlet />;
   };
-  // =========================================================
 
   return (
 
