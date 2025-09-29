@@ -1,0 +1,214 @@
+.fondo-project {
+    min-height: 100vh; 
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/*ESTILOS PARA LA CUADRÍCULA DE PROYECTOS (FINAL) */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;
+  justify-content: center; 
+}
+
+
+.grid-item {
+  display: flex; 
+}
+
+/* Enlace que envuelve la tarjeta */
+.project-card-link {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  display: block; 
+}
+
+/* Si un proyecto NO tiene link, se quita la interactividad */
+a.project-card-link[href="#"] {
+  pointer-events: none;
+  cursor: default;
+}
+
+
+/*ESTILOS PARA LA TARJETA Y EL EFECTO DE SUPERPOSICIÓN */
+/*La Tarjeta Principal*/
+.project-card {
+  position: relative; 
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 1rem;
+  overflow: hidden;   
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.7s ease;
+  border: none;
+}
+
+.project-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/*Imagen de Fondo de la Tarjeta */
+.project-card {
+  width: 100%;
+  height: 100%;
+}
+
+.card-img-top{
+    z-index: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    object-fit: cover; 
+}
+
+
+/*El Cuerpo de la Tarjeta (La parte que se desliza) */
+.project-card .card-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 1.5rem;
+    background:rgba(255, 255, 255, 0.85); 
+    will-change: transform, opacity;
+    opacity: 0;
+    transform: translateY(100%); 
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+/*Estado de Hover (Visible) */
+.project-card-link:hover .card-body {
+    opacity: 1;
+    transform: translateY(0); 
+
+}
+
+@media (hover: hover) {
+  .project-card-link:hover .card-body {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*Contenido dentro del cuerpo deslizable */
+.project-card .card-title {
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.project-card .card-text {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.btn-linkedin,
+.btn-wsp {
+    box-shadow: 0 3px 6px rgb(0, 0, .2);
+   
+}
+
+
+.title1, 
+.front{
+    margin-top: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+
+}
+
+.btn-github,
+.btn-linkedin,
+.btn-wsp {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #fff;          
+  position: relative;     
+  overflow: hidden;     
+  width: 130px ;  
+  height: 45px;
+    
+}
+
+.btn-github:hover,
+.btn-linkedin:hover,
+.btn-wsp:hover {
+    transform: translateY(-1px);
+    
+}
+
+
+.front {
+    text-align: left;   
+    margin-top: 2rem;   
+    margin-left: 0;     
+}
+
+.btns-redes {
+    display: flex;         
+    justify-content: center;
+    gap: 1.5rem;           
+    flex-wrap: wrap;       
+    margin-top: 2rem;       
+}
+
+.btn-wsp {
+    margin-bottom: 5px;            
+    background-color: #158512;     
+    border-radius: 1rem;          
+    border: none;                  
+    margin-left: clamp(0rem, 0vw, -10rem);
+    
+}
+
+.btn-wsp:hover {
+    background-color: #194b0f;    
+    box-shadow: 0 5px 9px rgb(0, 0, 0.2);
+}
+
+.icon-github,
+.icon-linkedin,
+.icon-wsp {
+    font-size: 1.4rem; 
+}
+
+.btn-linkedin {
+    border: none;                  
+    border-radius: 1rem;           
+    background-color: #246cbe;     
+}
+
+.btn-linkedin:hover{
+    background-color: #2e5ca1;
+    box-shadow: 0 5px 9px rgb(0, 0, 0.2);
+}
+
+.btn-github {
+    border: none;                 
+    border-radius: 1rem;          
+    box-shadow: 0 4px 6px rgb(0, 0, 0.2); 
+    background-color: #222020;     
+}
+
+.btn-github:hover {
+   background-color: #2b2f30;   
+   box-shadow: 0 5px 9px rgb(0, 0, 0.2); 
+}
+
+@media(max-width:576px) {
+    .btn-github,
+    .btn-linkedin,
+    .btn-wsp {
+        justify-content: center;
+    }
+}

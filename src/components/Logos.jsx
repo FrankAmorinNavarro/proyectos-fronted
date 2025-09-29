@@ -1,5 +1,5 @@
 
-import './Home.css';
+import './Hero.css';
 
 
 export default function Logos() {

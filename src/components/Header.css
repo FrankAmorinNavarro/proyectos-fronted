@@ -1,0 +1,109 @@
+header {
+    position: sticky; 
+    top: 0;          
+    left: 0;         
+    width: 100%;    
+    z-index: 1000;  
+    background-color: #031527;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 8rem;
+}
+@media(max-width: 834px){
+  header{
+    margin-top: -4rem;
+    padding-bottom: 2rem;
+  }
+}
+.logo{
+    font-family:'Arila', sans-serif;
+    color: rgb(13, 167, 206);
+    font-weight: 700;
+    font-size: 30px;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);  
+}
+
+.logo:hover{
+    color: rgb(13, 167, 206);
+}
+.navbar{ 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;    
+    
+}
+
+
+
+.navbar-nav{
+    list-style:none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 42px;
+    padding-left: 50%;
+    
+}
+
+
+
+.nav-link{
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+    position:relative;
+    white-space: nowrap; 
+    
+}
+
+.nav-link::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(17, 96, 187);
+    transition: width 0.3s ease;
+    box-shadow: 0px 2px 6px rgb(17, 95, 187);
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(17, 96, 187);
+  box-shadow: 0px -2px 6px rgb(17, 95, 187);
+  transition: width 0.3s ease;
+}
+
+
+.nav-link:hover{
+    color: rgb(58, 131, 240);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-3px);
+    text-shadow: 0px 2px 6px rgb(17, 95, 187);
+}
+.nav-link:hover::after,
+.nav-link:hover::before{
+    width: 100%;
+}
+
+
+
+@media(max-width: 768px){
+    .nav-link, .navbar-nav{
+        margin-top: 2%;
+        padding-left: 0;
+        gap: 0;
+        font-size: 14px;
+    }
+}

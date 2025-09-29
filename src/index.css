@@ -1,15 +1,20 @@
 
-/*body {
-  /*background-color: rgb(40, 41, 40);
- /*background: linear-gradient(
-    to right,
-    rgb(26, 3, 3) 0%,
-    #140202 40%,
-    #130202 63%,
-    #12171a 95%
-  );*/
-  /*background-color: #255986; /* azul marino */
- /* color: white; /* para que el texto se vea bien sobre fondo oscuro */
- /* margin: 0;
-  padding: 0;
-}*/
+
+html, body {
+  color: white;
+  background: linear-gradient(110deg, #051c2e, #010911);
+  cursor: url('./assets/img/f7286f9daed949f5d2832384f409dfaaU6yjpRvFcDEdEwiT-1.png')16 16, auto;
+}
+
+body.theme {
+   background: linear-gradient(110deg, #010911, #062033);
+}
+
+a:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+[role="button"]:hover,
+[onclick]:hover {
+    cursor: url('./assets/img/b1ab0d47889a42ffa6caf23b959be45bTav2xV19gV8GFh1h-1.png') 16 16, auto;
+}

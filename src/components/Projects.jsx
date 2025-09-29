@@ -81,7 +81,7 @@ export default function Projects() {
 
   return (
 
-    <div className='fondo-project'>
+    <div className='fondo-project' id='proyectos'>
       <div className="container py-5 text-center">
 
         <div className="title-3 mb-4 title1">
@@ -95,9 +95,9 @@ export default function Projects() {
         <div ref={containerRef} className="projects-grid">
 
           {projects.map((project) => (
-            // .Este es el 'grid-item'. Controlará el espacio en la cuadrícula.
+            
             <div key={project.id} className="grid-item">
-              {/*. El enlace ahora está DENTRO, y solo envuelve la tarjeta. */}
+              {/*enlace ahora está DENTRO, y solo envuelve la tarjeta*/}
               <a
                 href={project.link || '#'}
                 target={project.link ? '_blank' : '_self'}
@@ -136,44 +136,9 @@ export default function Projects() {
         </div>
 
 
-        <button className="btn btn-success mt-4 btn-contactar" onClick={() => setShowModal(true)}>
-          Contactar
-        </button>
-
         {showModal && (
           <div className="position-fixed top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 d-flex justify-content-center align-items-center" style={{ zIndex: 1050 }}>
-
-            <div className="card p-4" style={{ width: '400px' }}>
-              <h4>Contacto</h4>
-              <form
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  alert('Formulario enviado!');
-                  setShowModal(false);
-                }}
-              >
-
-                <div className="mb-3">
-                  <label className="form-label">Correo</label>
-                  <input type="email" className="form-control" placeholder="Correo electrónico" required />
-                </div>
-                <div className="mb-3">
-                  <label className="form-label">Mensaje</label>
-                  <textarea className="form-control" rows="4" placeholder="Tu mensaje..." require></textarea>
-                </div>
-
-                <div className="d-flex justify-content-end">
-                  <button type="button" className="btn btn-secondary me-2" onClick={() => setShowModal(false)}>
-                    Cerrar
-                  </button>
-
-                  <button type="submit" className="btn btn-primary">
-                    Enviar
-                  </button>
-                </div>
-
-              </form>
-            </div>
+    
 
           </div>
         )}
