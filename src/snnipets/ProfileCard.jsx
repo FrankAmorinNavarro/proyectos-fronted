@@ -38,7 +38,7 @@ const ProfileCardComponent = ({
   name = 'Frank Amorin',
   handle = 'frankcode',
   status = 'Online',
-  contactText = 'Contactame',
+  contactText = '',
   showUserInfo = true,
   onContactClick
 }) => {

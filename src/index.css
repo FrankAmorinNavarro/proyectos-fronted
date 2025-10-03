@@ -2,12 +2,13 @@
 
 html, body {
   color: white;
-  background: linear-gradient(110deg, #051c2e, #010911);
+  background: linear-gradient(110deg, #010911, #062033);
   cursor: url('./assets/img/f7286f9daed949f5d2832384f409dfaaU6yjpRvFcDEdEwiT-1.png')16 16, auto;
 }
 
 body.theme {
-   background: linear-gradient(110deg, #010911, #062033);
+  background: linear-gradient(110deg, #051c2e, #010911);
+   
 }
 
 a:hover,

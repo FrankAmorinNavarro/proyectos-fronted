@@ -1,5 +1,5 @@
 import { Download } from "lucide-react";
-import ProfileCard from './ProfileCard'
+import ProfileCard from '../snnipets/ProfileCard';
 import "./AboutMe.css";
 import profile from "../assets/img/profile.png";
 import miCV from '../assets/cv/Frank_Amorin_CV.pdf';
@@ -11,7 +11,7 @@ export default function AboutMe() {
         <section className="container container-about py-5 ">
             <div className="subtitle">
                 <h2 className="title2" id='sobremi'>Sobre Mí</h2>
-                <p>Creando soluciones digitales que transforman ideas en tecnología.</p>
+                <p className="subtext">Creando soluciones digitales que transforman ideas en tecnología.</p>
             </div>
 
             <div className="row">
@@ -20,12 +20,12 @@ export default function AboutMe() {
                         name="Frank Amorin"
                         handle="frankcode"
                         status="Online"
-                        contactText="Contactame"
+                        contactText="¡Contactame!"
                         avatarUrl={profile}
                         showUserInfo={true}
                         enableTilt={true}
                         enableMobileTilt={false}
-                        onContactClick={() => console.log('Contact clicked')} />
+                        onContactClick={() => window.open("https://wa.me/974697110", "_blank")} />
                 </div>
 
                 <div className='section-text col-md-6'>
