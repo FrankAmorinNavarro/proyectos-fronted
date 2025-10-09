@@ -1,6 +1,7 @@
 
 
 html, body {
+  overflow-x: hidden;
   color: white;
   background: linear-gradient(110deg, #010911, #062033);
   cursor: url('./assets/img/f7286f9daed949f5d2832384f409dfaaU6yjpRvFcDEdEwiT-1.png')16 16, auto;
@@ -18,4 +19,16 @@ input[type="button"]:hover,
 [role="button"]:hover,
 [onclick]:hover {
     cursor: url('./assets/img/b1ab0d47889a42ffa6caf23b959be45bTav2xV19gV8GFh1h-1.png') 16 16, auto;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+   
+    transition: background-color 5000s ease-in-out 0s;
+    
+    /* 2. Cambia el color del TEXTO a uno que sea visible en tu fondo oscuro */
+    -webkit-text-fill-color: #fff; /* Texto blanco */
+
 }

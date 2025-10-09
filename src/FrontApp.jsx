@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Projects from './components/Projects';
 import Hero from './components/Hero';
 import AboutMe from './components/AboutMe';
-
+import Contact from './components/Contact';
 
 export const FrontApp = () => {
 
@@ -34,6 +34,7 @@ export const FrontApp = () => {
         <Hero/>
         <AboutMe />
         <Projects />
+        <Contact />
         
       </main>
     </>

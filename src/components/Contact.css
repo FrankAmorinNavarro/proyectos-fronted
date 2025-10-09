@@ -1,0 +1,216 @@
+.seccion-contact{
+    margin-top: 3rem;
+    border-radius: 150px;
+    background-color: #060b1d25;
+}
+
+
+
+.title-contact {
+    padding-top: 5rem;
+    text-align: center;
+
+}
+.title-contact{
+    font-size: 42px;
+    font-weight: 700;
+    color:#00b7ff;
+    text-shadow: 0px 0px 3px #000;
+}
+.links-sociales {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+li{
+    font-size: 17px;
+    font-family:Arial, sans-serif;
+    text-shadow: 0px 0px 1px #00b7ff;
+    color: #00b7ff;
+}
+
+p{
+    text-shadow: 0px 0px 2px #0000;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    padding-bottom: 1rem;
+}
+
+
+.btns-redes {
+    display: flex;         
+    justify-content: center;
+    gap: 1.5rem;           
+    flex-wrap: wrap;       
+    margin-top: 3rem;       
+}
+
+.btn-linkedin,
+.btn-wsp {
+    box-shadow: 0 3px 6px rgb(0, 0, .2);
+   
+}
+
+.btn-github,
+.btn-linkedin,
+.btn-wsp {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #fff;          
+  position: relative;     
+  overflow: hidden;     
+  width: 130px ;  
+  height: 45px;
+  transition: transform 0.3s ease;
+    
+}
+
+.btn-github:hover,
+.btn-linkedin:hover,
+.btn-wsp:hover {
+    transform: translateY(-10px);
+    
+}
+
+.btn-wsp {
+    margin-bottom: 5px;            
+    background-color: #158512;     
+    border-radius: 1rem;          
+    border: none;                  
+    margin-left: clamp(0rem, 0vw, -10rem);
+    
+}
+
+.btn-wsp:hover {
+    background-color: #1f9608;    
+    box-shadow: 0 5px 9px rgb(0, 0, 0.2);
+}
+
+.icon-github,
+.icon-linkedin,
+.icon-wsp {
+    font-size: 1.4rem; 
+}
+
+.btn-linkedin {
+    border: none;                  
+    border-radius: 1rem;           
+    background-color: #246cbe;     
+}
+
+.btn-linkedin:hover{
+    background-color: #3185d4;
+    box-shadow: 0 5px 9px rgb(0, 0, 0.2);
+}
+
+.btn-github {
+    border: none;                 
+    border-radius: 1rem;          
+    box-shadow: 0 4px 6px rgb(0, 0, 0.2); 
+    background-color: #222020;     
+}
+
+.btn-github:hover {
+   background-color: #2b2f30;   
+   box-shadow: 0 5px 9px rgb(0, 0, 0.2); 
+}
+
+@media(max-width:576px) {
+    .btn-github,
+    .btn-linkedin,
+    .btn-wsp {
+        justify-content: center;
+    }
+}
+
+
+.contenedor-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.formulario {
+    border-radius: 30px;
+    padding: 3rem;
+    background-color: rgba(0, 0, 0, 0.301);
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-formu {
+    margin-bottom: 2.5rem;
+}
+
+.form-control {
+    
+    border: none;
+    background-color: transparent;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.form-control input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #52ceff;
+    width: 100%;
+    padding: 6px 0px;
+    font-size: 15px;
+    color: #ffffff;
+    outline: none;
+    box-shadow: 3px 3px 4px -2px #52ceff;
+
+}
+
+.form-control textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #52ceff;
+    width: 100%;
+    padding: 6px 10px;
+    font-size: 15px;
+    color: #ffffff;
+    outline: none;
+    box-shadow: 3px 3px 4px -2px #52ceff;
+    min-height: 100px;
+}
+
+.form-control label {
+    font-family: monospace;
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    pointer-events: none;
+}
+
+.form-control label span {
+    display: inline-block;
+    font-size: 16.5px;
+    color: #52ceff;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+/*focus cuando el input tiene texto */
+.form-control input:focus+label span,
+.form-control input:not(:placeholder-shown)+label span,
+.form-control textarea:focus+label span,
+.form-control textarea:not(:placeholder-shown)+label span {
+   
+    color: #74e3f7;
+    transform: translateY(-27px);
+}
+.btn-enviar{
+    height: 45px;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    border-radius: 11px;
+    background-color:#74e3f7;
+    transition: transform 0.3s ease;
+}
+
+.btn-enviar:hover{
+    transform: translateY(-10px);
+}

@@ -1,6 +1,6 @@
 .fondo-project {
   margin-top: 7rem;
-  background-color: #7595ff05;
+  background-color: #060b1d25;
     min-height: 100vh; 
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -9,14 +9,14 @@
 
 
 .title-3{
-  color: #177cff;
+  color: #17c9ff;
   font-size: 46px;
   font-weight: 700;
   font-family: Arial, sans-serif;
   text-shadow: 1px 2px 7px #000000;
 }
 .front {
-  color: #0077ff;
+  color: #17c9ff;
    text-shadow: 2px 3px 3px #000000;
   font-weight: 600;
   font-size: 18px;
@@ -57,22 +57,18 @@ a.project-card-link[href="#"] {
 /*ESTILOS PARA LA TARJETA Y EL EFECTO DE SUPERPOSICIÓN */
 /*La Tarjeta Principal*/
 .project-card {
+  
   position: relative; 
   width: 100%;
   aspect-ratio: 1 / 1;
   border-radius: 1rem;
   overflow: hidden;   
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+ box-shadow:  0px 0px 20px #036ec5;
   transition: transform 0.7s ease;
   border: none;
-  border-radius: 16px;
-  background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    transparent calc(100% - 112px),
-    #175eaf calc(110% - 25px),
-    #175eaf 100%
-  );
+  border-radius: 1rem;
+  background: transparent;
+  z-index: 1;
 }
 
 .project-card:hover{
@@ -87,25 +83,14 @@ a.project-card-link[href="#"] {
 }
 
 .card-img-top{
-    z-index: 0;
-    top: 0;
-    left: 0;
-    position: absolute;
-    object-fit: cover; 
- -webkit-mask-image: linear-gradient(to top, transparent 1%, black 20%, black 89%, transparent 99%),
-              linear-gradient(to left, transparent 0%, black 15%, black 69%, transparent 99%),
-              linear-gradient(to right, transparent 0%, black 0%, black 99%, transparent 99%),
-              linear-gradient(to bottom, transparent 1%, black 10%, black 59%, transparent 99%);
-  -webkit-mask-composite: intersect;
-  -webkit-mask-repeat: no-repeat;
-
-  mask-image: linear-gradient(to top, transparent 1%, black 20%, black 89%, transparent 99%),
-              linear-gradient(to left, transparent 0%, black 25%, black 69%, transparent 99%),
-              linear-gradient(to right, transparent 0%, black 0%, black 99%, transparent 99%),
-              linear-gradient(to bottom, transparent 1%, black 10%, black 59%, transparent 99%);
-  mask-composite: intersect;
-  mask-repeat: no-repeat;
+  border: #0077ff 2px solid;
+  height: 100%;
+  border-radius: 1rem;
+  z-index: 0;
+  position: absolute;
+  object-fit: cover; 
 }
+
 
 
 /*El Cuerpo de la Tarjeta (La parte que se desliza) */
@@ -153,90 +138,3 @@ a.project-card-link[href="#"] {
   line-height: 1.5;
 }
 
-.btn-linkedin,
-.btn-wsp {
-    box-shadow: 0 3px 6px rgb(0, 0, .2);
-   
-}
-
-.btn-github,
-.btn-linkedin,
-.btn-wsp {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  color: #fff;          
-  position: relative;     
-  overflow: hidden;     
-  width: 130px ;  
-  height: 45px;
-    
-}
-
-.btn-github:hover,
-.btn-linkedin:hover,
-.btn-wsp:hover {
-    transform: translateY(-1px);
-    
-}
-
-
-
-.btns-redes {
-    display: flex;         
-    justify-content: center;
-    gap: 1.5rem;           
-    flex-wrap: wrap;       
-    margin-top: 2rem;       
-}
-
-.btn-wsp {
-    margin-bottom: 5px;            
-    background-color: #158512;     
-    border-radius: 1rem;          
-    border: none;                  
-    margin-left: clamp(0rem, 0vw, -10rem);
-    
-}
-
-.btn-wsp:hover {
-    background-color: #194b0f;    
-    box-shadow: 0 5px 9px rgb(0, 0, 0.2);
-}
-
-.icon-github,
-.icon-linkedin,
-.icon-wsp {
-    font-size: 1.4rem; 
-}
-
-.btn-linkedin {
-    border: none;                  
-    border-radius: 1rem;           
-    background-color: #246cbe;     
-}
-
-.btn-linkedin:hover{
-    background-color: #2e5ca1;
-    box-shadow: 0 5px 9px rgb(0, 0, 0.2);
-}
-
-.btn-github {
-    border: none;                 
-    border-radius: 1rem;          
-    box-shadow: 0 4px 6px rgb(0, 0, 0.2); 
-    background-color: #222020;     
-}
-
-.btn-github:hover {
-   background-color: #2b2f30;   
-   box-shadow: 0 5px 9px rgb(0, 0, 0.2); 
-}
-
-@media(max-width:576px) {
-    .btn-github,
-    .btn-linkedin,
-    .btn-wsp {
-        justify-content: center;
-    }
-}

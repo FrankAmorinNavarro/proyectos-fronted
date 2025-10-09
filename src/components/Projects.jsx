@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from 'react';
 import './Projects.css';
 import { FaWhatsapp, FaLinkedin, FaGithub } from 'react-icons/fa';
 import primerportada from '../assets/img/primerportada.png';
-import ElectricBorder from '../snnipets/ElectricBorder'
+
 export default function Projects() {
 
   const [showModal, setShowModal] = useState(false);
@@ -102,37 +102,20 @@ export default function Projects() {
                 className="project-card-link"
                 onClick={(e) => handleCardClick(e, project)}
               >
-                <ElectricBorder
-                  color="#175eaf"
-                  speed={1}
-                  chaos={0.5/2}
-                  thickness={3.5}
-                  style={{ borderRadius: 16 }}
-                >
+               
                   <div className={`card project-card proyecto-${project.id} ${activeCardId === project.id ? 'is-active' : ''}`}>
-                    <img src={project.image} className="card-img-top" alt="" />
+                    <img src={project.image} className="card-img-top" alt="XD"/>
                     <div className="card-body">
                       <h5 className="card-title">{project.title}</h5>
                       <p className="card-text">{project.description}</p>
                     </div>
                   </div>
-                </ElectricBorder>
               </a>
             </div>
           ))}
 
         </div>
 
-        <div className='btns-redes'>
-          <a href="https://wa.me/974697110" className='btn btn-wsp' target='_blank' rel='noopener noreferrer'>
-            <FaWhatsapp className='me-2 icon-wsp'></FaWhatsapp>Whatsapp</a>
-
-          <a href="https://www.linkedin.com/in/frank-alexis-amorin-navarro-8233a92b2/" className='btn btn-linkedin' target='_blank' rel='noopener noreferrer'>
-            <FaLinkedin className='me-2 icon-linkedin'></FaLinkedin>Linkedin</a>
-
-          <a href="https://github.com/FrankAmorinNavarro" className='btn btn-github' rel='noopener noreferrer' target='_blank'>
-            <FaGithub className='me-2 icon-github'></FaGithub>Github</a>
-        </div>
 
 
         {showModal && (
