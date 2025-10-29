@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from 'react';
 import './Projects.css';
 import { FaWhatsapp, FaLinkedin, FaGithub } from 'react-icons/fa';
 import primerportada from '../assets/img/primerportada.png';
-
+import portada2 from '../assets/img/portada2.webp';
 export default function Projects() {
 
   const [showModal, setShowModal] = useState(false);
@@ -50,9 +50,9 @@ export default function Projects() {
     },
     {
       id: 2,
-      title: 'Proyecto 2',
-      image: 'proyecto2.jpg',
-      description: 'Descripción breve .',
+      title: 'Info-Dino',
+      image: portada2,
+      description: 'Página informativa sobre la era Pangea, donde explica brevemente por las 3 etapas que atravesó el planeta hace millones de años.',
       link: 'https://frankamorinnavarro.github.io/info-dino/'
     },
     {
