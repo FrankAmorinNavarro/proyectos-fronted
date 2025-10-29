@@ -53,7 +53,7 @@ export default function Projects() {
       title: 'Proyecto 2',
       image: 'proyecto2.jpg',
       description: 'Descripción breve .',
-      link: '/proyecto2'
+      link: 'https://frankamorinnavarro.github.io/info-dino/'
     },
     {
       id: 3,
